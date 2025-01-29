@@ -44,12 +44,61 @@ p {
 }
 
 a {
-	text-decoration: none;
-	color: unset;
 	cursor: pointer;
 }
 
+/* animal table */
+.animal-table-container {
+	width: max-content;
+	padding: 5px;
+	border-radius: 15px;
+	background-color: rgb(77, 166, 182);
+}
 
+.animal-table-container td {
+	width: max-content;
+	text-align: left;
+	padding: 5px;
+	border-radius: 2px;
+	background-color: rgb(219, 228, 230);
+}
+
+/* season clock */
+.season-clock {
+	display: flex;
+    flex-direction: column; 
+    align-items: center; 
+	width: max-content;
+	height:max-content;
+	padding: 15px;
+	color: black;
+	background-color: #add8e6;
+}
+
+.season-clock.dark {
+    color: white;
+    background-color: #00008b;
+}
+
+.season-clock .month{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.season-clock .day{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.season-clock .timer{
+	font-size: 20px;
+}
+
+
+/* countdown */
+.red{
+	color: red;
+}
 
 /* Dont stretch my Media */
 img,
