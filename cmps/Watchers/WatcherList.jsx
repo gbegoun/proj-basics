@@ -1,12 +1,12 @@
 const { useState, useEffect, useRef } = React
-import {WatcherItem} from "./WatcherItem.jsx"
+import { WatcherPreview } from "./WatcherPreview.jsx"
 
-export function WatcherList({watchers, onSelect })
+export function WatcherList({watchers, onSelect, onRemove})
 {
     return (
-        <div>
+        <div className="watcher-list">
             {watchers.map(watcher => (
-            <WatcherItem key={watcher.id} watcher={watcher} onSelect={()=>onSelect(watcher)}/>
+                <WatcherPreview key={watcher.id} watcher={watcher} onSelect={()=>onSelect(watcher)} onRemove={()=>onRemove(watcher)}/>
             ))}
         </div>
     )
