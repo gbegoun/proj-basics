@@ -108,6 +108,61 @@ object {
 	max-width: 100%
 }
 
+/* Watchers */
+.watcher-modal
+{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: max-content;
+	height: max-content;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.watcher-modal .button-close{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	right: 0;
+	margin: 0;
+	border-radius: 0;
+	color: white;
+	background-color: gray;
+}
+
+.watcher-list{
+	display:  flex;
+	gap: 10px;
+}
+.watcher-preview{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 150px;
+	border: 1px solid black;
+}
+
+.watcher-preview-controls{
+	display: flex;
+	flex-direction: row;
+}
+
+/* mouse monitor */
+.mouse-monitor
+{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	right: 0;
+	bottom: 0;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
 /* Simple and useful CSS Debugging Technique */
 .debug * {
 	outline: 1px solid gold
