@@ -31,7 +31,7 @@ export function SeasonClock({datetime}){
         }
         
         function getSeason(monthIndex) {
-            const seasons = ["Winter", "Spring", "Summer", "Fall"]
+            const seasons = ["Winter", "Spring", "Summer", "autumn"]
             return seasons[Math.floor(monthIndex / 3)] || "Invalid season"
         }
         
