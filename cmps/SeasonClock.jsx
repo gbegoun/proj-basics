@@ -50,7 +50,7 @@ export function SeasonClock({datetime}){
     return (
         <section className={`season-clock ${darkClass}`} onClick={onClick}>
             <span className="month">{`${monthName} (${seasonName})`}</span>
-            {/* <img className="season" src={seasonImage} /> */}
+            <img className="season" src={seasonImage} />
             <span className="day">{dayName}</span>
             <span className="timer">{count}</span>
         </section>
