@@ -14,7 +14,6 @@ export const Watchers = () => {
         .catch(err=> {
             console.log(err)
         })
-        console.log(watchers)
     }, [])
 
     function onAddWatcher()

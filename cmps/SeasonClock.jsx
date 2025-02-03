@@ -42,7 +42,7 @@ export function SeasonClock({datetime}){
         
         const monthName = getMonthName(datetime.getMonth())
         const seasonName = getSeason(datetime.getMonth())
-        const seasonImage = `/assets/img/season-imgs/${seasonName}.png`
+        const seasonImage = `assets/img/season-imgs/${seasonName}.png`
         const dayName = getDayName(datetime.getDay())
         const darkClass = isDark ? 'dark' : ''    
 

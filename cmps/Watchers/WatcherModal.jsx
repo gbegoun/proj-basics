@@ -1,7 +1,5 @@
 export const WatcherModal = ({ watcher, onModalClose }) => {
 
-    console.log(watcher)
-
     return(
         <div className = "watcher-modal">  
             <h3>{watcher.name}</h3>
