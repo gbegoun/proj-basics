@@ -18,6 +18,7 @@ export function SeasonClock({datetime}){
         }
     },[])
     
+    
     function getMonthName(monthIndex) {
         const months = [
             "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -39,10 +40,13 @@ export function SeasonClock({datetime}){
             setIsDark(isDark => !isDark)
         }
         
-        
         const monthName = getMonthName(datetime.getMonth())
         const seasonName = getSeason(datetime.getMonth())
-        const seasonImage = `assets/img/season-imgs/${seasonName}.png`
+        const BASE_URL = window.location.href === "http://127.0.0.1:5505/index.html" ? '' :  'proj-basics/'
+        const seasonImage = BASE_URL + `assets/img/season-imgs/${seasonName}.png`
+        
+        console.log(seasonImage);
+        
         const dayName = getDayName(datetime.getDay())
         const darkClass = isDark ? 'dark' : ''    
 
