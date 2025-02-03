@@ -42,10 +42,7 @@ export function SeasonClock({datetime}){
         
         const monthName = getMonthName(datetime.getMonth())
         const seasonName = getSeason(datetime.getMonth())
-        const BASE_URL = window.location.href === "http://127.0.0.1:5505/index.html" ? '' :  'proj-basics/'
-        const seasonImage = BASE_URL + `assets/img/season-imgs/${seasonName}.png`
-        
-        console.log(seasonImage);
+        const seasonImage = './assets/img/season-imgs/${seasonName}.png`
         
         const dayName = getDayName(datetime.getDay())
         const darkClass = isDark ? 'dark' : ''    
