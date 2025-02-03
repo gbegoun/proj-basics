@@ -42,15 +42,15 @@ export function SeasonClock({datetime}){
         
         const monthName = getMonthName(datetime.getMonth())
         const seasonName = getSeason(datetime.getMonth())
-        const seasonImage = `assets/img/season-imgs/${seasonName}.png`
-        
+        const seasonImage = `./assets/img/season-imgs/${seasonName}.png`
+        console.log(seasonImage)
         const dayName = getDayName(datetime.getDay())
         const darkClass = isDark ? 'dark' : ''    
 
     return (
         <section className={`season-clock ${darkClass}`} onClick={onClick}>
             <span className="month">{`${monthName} (${seasonName})`}</span>
-            <img className="season" src={seasonImage} />
+            {/* <img className="season" src={seasonImage} /> */}
             <span className="day">{dayName}</span>
             <span className="timer">{count}</span>
         </section>
